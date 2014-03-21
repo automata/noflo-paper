@@ -1,0 +1,29 @@
+{
+  "name": "noflo-paper",
+  "description": "Paper.js components for NoFlo.",
+  "author": "Vilson Vieira, Jurg Lehni and Jonathan Puckey <vilson@void.cc>",
+  "repo": "automata/noflo-paper",
+  "version": "0.0.1",
+  "keywords": ["vector", "image", "paper", "paperjs", "drawing"],
+  "dependencies": {
+    "noflo/noflo": "*",
+    "automata/paper.js": "*"
+  },
+  "scripts": [
+    "index.js",
+    "components/Setup.coffee",
+    "components/Path.coffee",
+    "components/Draw.coffee"
+  ],
+  "json": [
+    "component.json"
+  ],
+  "noflo": {
+    "icon": "pencil-square",
+    "components": {
+      "Setup": "components/Setup.coffee",
+      "Path": "components/Path.coffee",
+      "Draw": "components/Draw.coffee"
+    }
+  }
+}
