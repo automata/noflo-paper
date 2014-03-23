@@ -1,7 +1,8 @@
 noflo = require 'noflo'
-paper = require 'paper'
 
 class Draw extends noflo.Component
+  description: 'Draws the current Paper.js scene graph'
+  icon: 'pencil-square'
   constructor: ->
     @inPorts =
       draw: new noflo.Port 'object'
@@ -9,6 +10,7 @@ class Draw extends noflo.Component
     @inPorts.draw.on('data', @draw)
 
   draw: (data) =>
-    paper.view.draw()
+    if paper
+      paper.view.draw()
 
 exports.getComponent = -> new Draw

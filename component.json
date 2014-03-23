@@ -6,14 +6,13 @@
   "version": "0.0.1",
   "keywords": ["vector", "image", "paper", "paperjs", "drawing"],
   "dependencies": {
-    "noflo/noflo": "*",
-    "automata/paper.js": "*"
+    "noflo/noflo": "*"
   },
   "scripts": [
     "index.js",
-    "components/Setup.coffee",
+    "components/Draw.coffee",
     "components/Path.coffee",
-    "components/Draw.coffee"
+    "components/Point.coffee"
   ],
   "json": [
     "component.json"
@@ -21,9 +20,9 @@
   "noflo": {
     "icon": "pencil-square",
     "components": {
-      "Setup": "components/Setup.coffee",
+      "Draw": "components/Draw.coffee",
       "Path": "components/Path.coffee",
-      "Draw": "components/Draw.coffee"
+      "Point": "components/Point.coffee"
     }
   }
 }
